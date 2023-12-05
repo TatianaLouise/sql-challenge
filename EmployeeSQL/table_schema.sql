@@ -74,4 +74,27 @@ REFERENCES "departments" ("dept_no");
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 
+alter table titles
+alter column "title_id" type varchar (100),
+alter column "title" type varchar (100);
+
+alter table employees
+alter column "emp_title_id" type varchar (100),
+alter column "first_name" type varchar (100),
+alter column "last_name" type varchar (100),
+alter column "sex" type varchar (100);
+
+alter table "departments"
+alter column "dept_no" type varchar (100),
+alter column "dept_name" type varchar (100);
+
+alter table "dept_emp"
+alter column "dept_no" type varchar (100);
+
+alter table "dept_manager" 
+alter column "dept_no" type varchar (100); 
+
+
+
+
 
